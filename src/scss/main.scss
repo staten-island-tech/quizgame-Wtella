@@ -1,3 +1,18 @@
 body {
   font-size: 30px;
 }
+
+.question {
+  font-weight: 600;
+}
+
+#submit {
+  background-color: #f0fff0;
+  font-size: 20px;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+#submit:hover {
+  background-color: #808080;
+}
