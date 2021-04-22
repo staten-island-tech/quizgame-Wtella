@@ -38,7 +38,7 @@ submitButton.addEventListener('click', showResults);
 
 const showQuiz = document.getElementsByClassName('quiz');
 const submitButton = document.getElementsByClassName('submit');
-const showResults = document.getElementsByClassName('results');
+const resultsContainer = document.getElementsByClassName('results');
 let myQuestions = [
 {
     question: "Auhhasuwnksjh asuh oiwjja?",
