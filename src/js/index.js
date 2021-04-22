@@ -2,6 +2,10 @@ console.log("connected");
 
 function buildQuiz(){}
 
+myQuestions.forEach(
+    (currentQuestion, questionNumber) => {}
+)
+
 function showResults(){}
 
 buildQuiz();
