@@ -14,37 +14,33 @@ submitButton.addEventListener('click', showResults);
 const showQuiz = document.getElementsByClassName('quiz');
 const submitButton = document.getElementsByClassName('submit');
 const showResults = document.getElementsByClassName('results');
-const myQuestions = [
+let myQuestions = [
 {
     question: "Auhhasuwnksjh asuh oiwjja?",
-    answers: {
-        a:"Akjask",
-        b:"Bkajsh",
-        c:"Ckjashw"
-    },
-
-    correctAnswer: "c"
-
+    answers: [
+        {option: "AA", answer:true},
+        {option:"Bkajsh",answer:false},
+        {option:"Ckjashw"m answer:false}
+    ],
 },
+
+
 {
     question: "HHHHHHHHHH?",
-    answers: {
-        a:"I",
-        b: "Z",
-        c: "O"
-    },
-
-    correctAnswer: "a"
+    answers: [
+        {option:"Z",answer:false},
+        {option: "I",answer:true},
+        {option: "O", answer:false}
+    ],
 },
+
 {
     question: "Cats sleep ... hours out of a day.",
-    answers: {
-        a: "four",
-        b: "fifteen",
-        c: "twenty-three"
-    },
-
-    correctAnswer: "c"
+    answers: [
+        {option: "four",answer:false},
+        {option: "fifteen",answer:false},
+        {option: "twenty-three", answer:true}
+    ],
 }
 
 ];
