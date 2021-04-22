@@ -6,7 +6,32 @@ myQuestions.forEach(
     (currentQuestion, questionNumber) => {}
 )
 
-function showResults(){}
+const answers = [];
+
+function showResults(){
+
+    const answerContainers = quizContainer.querySelectorAll('.answers');
+
+    let numberCorrect = 0;
+
+    myQuestions.forEach((currentQuestion, questionNumber)) 
+
+    const answerContainer = answerContainers[questionNumber];
+    const selector = `input[name=question${questionNumber}]:checked`;
+    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+    if(userAnswer === currentQuestion.correctAnswer){
+        numberCorrect++;
+
+        answerContainers[questionNumber].style.color = 'green';
+    }
+
+    else{
+        answerContainers[questionNumber].style.color = 'red';
+    }
+
+};
+
 
 buildQuiz();
 submitButton.addEventListener('click', showResults);
@@ -20,13 +45,13 @@ let myQuestions = [
     answers: [
         {option: "AA", answer:true},
         {option:"Bkajsh",answer:false},
-        {option:"Ckjashw"m answer:false}
+        {option:"Ckjashw",answer:false}
     ],
 },
 
 
 {
-    question: "HHHHHHHHHH?",
+    question: "H...?",
     answers: [
         {option:"Z",answer:false},
         {option: "I",answer:true},
