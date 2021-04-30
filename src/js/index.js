@@ -1,3 +1,24 @@
+console.log("connected");
+
+function buildQuiz(){}
+
+myQuestions.forEach(
+    (currentQuestion, questionNumber) => {}
+)
+
+const answers = [];
+
+function showResults(){
+
+    const answerContainers = quizContainer.querySelectorAll('.answers');
+
+    let numberCorrect = 0;
+
+    myQuestions.forEach((currentQuestion, questionNumber)) 
+
+    const answerContainer = answerContainers[questionNumber];
+    const selector = `input[name=question${questionNumber}]:checked`;
+    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
     if(userAnswer === currentQuestion.correctAnswer){
         numberCorrect++;
@@ -9,6 +30,7 @@
         answerContainers[questionNumber].style.color = 'red';
     }
 
+};
 
 
 buildQuiz();
